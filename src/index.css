@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-900; 
+}
+h1 { 
+  @apply text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600 inline-block;; 
+}
+h2 {
+  @apply text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600 inline-block;; 
+}
+.my-custom-class {
+  @apply  text-pink-800; 
+}
+.bg-primary-color {
+  @apply px-1 py-2 w-full rounded-xl mr-4 bg-gradient-to-r from-orange-500 to-pink-500 text-black font-bold hover:border-none;; 
+}
+
