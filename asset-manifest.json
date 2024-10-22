@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioella/static/css/main.6f3e94a4.css",
-    "main.js": "/portfolioella/static/js/main.44271bd1.js",
+    "main.css": "/portfolioella/static/css/main.430fbd2a.css",
+    "main.js": "/portfolioella/static/js/main.ca66b55b.js",
     "static/media/Instagram-Logo.png": "/portfolioella/static/media/Instagram-Logo.048d8ccbfbecf6842fe0.png",
     "static/media/ellaeun.png": "/portfolioella/static/media/ellaeun.dc1f75072adda274f6cd.png",
     "static/media/ella1.jpg": "/portfolioella/static/media/ella1.abb3f4ead706c17e4e27.jpg",
@@ -13,11 +13,11 @@
     "static/media/JavaScript.png": "/portfolioella/static/media/JavaScript.d685342dca75ffa91e6a.png",
     "static/media/CSS-Logo.png": "/portfolioella/static/media/CSS-Logo.d94e03711e9aba205079.png",
     "index.html": "/portfolioella/index.html",
-    "main.6f3e94a4.css.map": "/portfolioella/static/css/main.6f3e94a4.css.map",
-    "main.44271bd1.js.map": "/portfolioella/static/js/main.44271bd1.js.map"
+    "main.430fbd2a.css.map": "/portfolioella/static/css/main.430fbd2a.css.map",
+    "main.ca66b55b.js.map": "/portfolioella/static/js/main.ca66b55b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f3e94a4.css",
-    "static/js/main.44271bd1.js"
+    "static/css/main.430fbd2a.css",
+    "static/js/main.ca66b55b.js"
   ]
 }
