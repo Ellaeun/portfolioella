@@ -1,50 +1,99 @@
-import React from 'react'
-import ellaeun from '../assets/ellaeun/ellaeun.png'
+import React, { useState, useEffect } from 'react';
+import ellaeun from '../assets/ellaeun/ellaeun.png';
 import { TypeAnimation } from "react-type-animation";
 
-
 const Hero = () => {
-    return (
-          <div>
-          <div className='grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] mx-auto py-8 bg-black'>
-          <div className='col-span-1 my-auto mx-auto w-[200px] h-auto 1g:w-[200px]'>
-          <img className='rounded-lg md:ml-4' src={ellaeun} alt="Ella Eun" style={{ backdropFilterwidth: '45%', height: 'auto' }} />
-          </div>
-          <div>
-          <div className='col-span-1 px-5'>
-          <h1 className="text-white text-4x1 sm:text-5x1 1g:text-8x1 font-extrabold">
-          <span className="font-serif primary-color"><br/>I'm a</span><br/>
-          <TypeAnimation 
-          className=" text-pink-700 sm:text-3xl lg:text-4xl font-sans"
-          sequence={[
-          "Student",
-          1500, 
-          "Aspiring",
-          1500,
-          "Front-End Dev",
-          1500, 
-          "Back-End Dev",
-          1500,
-          ]}
-          wrapper="span"
-          speed={150} 
-          repeat={Infinity}/></h1>
-          <p className= "bg-black text-white sm: text 1g my-x1 text-x1 font-serif font-semibold "><br/>
-          Hi my name is Louela Eyon studied at Cavite State University Bacoor Campus</p>
-          <div className="my-6">
-          <a href="https://drive.google.com/drive/home" target="_blank"  rel="noopener noreferrer" 
-          className="px-4 py-2 w-full rounded-xl mr-4 bg-gradient-to-r from-orange-500 to-pink-500 text-black font-bold transition-transform transform hover:scale-105 hover:border-none"> Download CV</a>
-          <div className="my-6 contact-section">
-          <a href="tel:+9277763375" className="px-4 py-2 rounded-xl mr-4 bg-gradient-to-r from-orange-500 to-pink-500 text-black transition-transform transform hover:scale-105 font-bold">Contact Me</a>
-          </div>
-          
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
+  // State to check if it's a mobile device
+  const [isMobile, setIsMobile] = useState(false);
 
-  )
-  };  
+  // Check if it's a mobile device on mount
+  useEffect(() => {
+    const checkDeviceType = () => {
+      setIsMobile(window.innerWidth < 768); // You can change this breakpoint to your preference
+    };
 
-export default Hero
+    // Add event listener for window resize
+    window.addEventListener('resize', checkDeviceType);
+
+    // Check device type on mount
+    checkDeviceType();
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', checkDeviceType);
+    };
+  }, []);
+
+  return (
+    <div className="h-screen bg-black flex justify-center items-center">
+      <div className="max-w-7xl w-full px-6 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
+        {/* Image */}
+        <div className="w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-auto rounded-lg">
+          <img
+            className="rounded-lg shadow-xl"
+            src={ellaeun}
+            alt="Ella Eun"
+            style={{ backdropFilter: 'blur(5px)', height: 'auto' }}
+          />
+        </div>
+
+        {/* Text Content */}
+        <div className="text-center md:text-left max-w-xl">
+          <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+            <span className="font-serif text-gradient"><br />I'm a</span><br />
+            <TypeAnimation
+              className="text-pink-700 sm:text-3xl lg:text-4xl font-sans"
+              sequence={[
+                "Student",
+                1500,
+                "Aspiring",
+                1500,
+                "Front-End Dev",
+                1500,
+                "Back-End Dev",
+                1500,
+              ]}
+              wrapper="span"
+              speed={150}
+              repeat={Infinity}
+            />
+          </h1>
+          <p className="text-white text-2xl sm:text-3xl lg:text-4xl mt-4 sm:mt-6 font-serif">
+            Hi, my name is Louela Eyon and I studied at Cavite State University, Bacoor Campus.
+          </p>
+
+          {/* Buttons */}
+          <div className="flex justify-center md:justify-start gap-4 mt-6">
+            <a
+              href="https://docs.google.com/document/d/1EZDi-HMxtFvMyBtQ_pBPNOfMsH8cZ77RNr5385iNXU0/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-orange-500 to-pink-500 text-black font-bold transition-transform transform hover:scale-105 hover:border-none"
+            >
+              Download CV
+            </a>
+
+            {/* "Contact Me" Button */}
+            {isMobile ? (
+              <a
+                href="tel:+9277763375" // For mobile, open the phone dialer
+                className="px-6 py-3 rounded-xl bg-gradient-to-r from-orange-500 to-pink-500 text-black font-bold transition-transform transform hover:scale-105"
+              >
+                Contact Me
+              </a>
+            ) : (
+              <a
+                href="#contact" // For desktop, scroll to the contact form section
+                className="px-6 py-3 rounded-xl bg-gradient-to-r from-orange-500 to-pink-500 text-black font-bold transition-transform transform hover:scale-105"
+              >
+                Contact Me
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
