@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioella/static/css/main.a3d878db.css",
-    "main.js": "/portfolioella/static/js/main.2a987589.js",
+    "main.css": "/portfolioella/static/css/main.f7d164c1.css",
+    "main.js": "/portfolioella/static/js/main.94acafcb.js",
     "static/media/ProductDashboard.png": "/portfolioella/static/media/ProductDashboard.a32823a9993858fed706.png",
     "static/media/ellaeun.png": "/portfolioella/static/media/ellaeun.dc1f75072adda274f6cd.png",
     "static/media/admin dashboard.png": "/portfolioella/static/media/admin dashboard.b150488877666b647653.png",
@@ -19,11 +19,11 @@
     "static/media/CSS-Logo.png": "/portfolioella/static/media/CSS-Logo.d94e03711e9aba205079.png",
     "static/media/fb.jpg": "/portfolioella/static/media/fb.e262ca013cc43ab28add.jpg",
     "index.html": "/portfolioella/index.html",
-    "main.a3d878db.css.map": "/portfolioella/static/css/main.a3d878db.css.map",
-    "main.2a987589.js.map": "/portfolioella/static/js/main.2a987589.js.map"
+    "main.f7d164c1.css.map": "/portfolioella/static/css/main.f7d164c1.css.map",
+    "main.94acafcb.js.map": "/portfolioella/static/js/main.94acafcb.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3d878db.css",
-    "static/js/main.2a987589.js"
+    "static/css/main.f7d164c1.css",
+    "static/js/main.94acafcb.js"
   ]
 }
