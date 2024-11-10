@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolioella/static/css/main.5ea4fd5a.css",
+    "main.css": "/portfolioella/static/css/main.24a4b3e1.css",
     "main.js": "/portfolioella/static/js/main.d56f50ea.js",
     "static/media/ProductDashboard.png": "/portfolioella/static/media/ProductDashboard.a32823a9993858fed706.png",
     "static/media/ellaeun.png": "/portfolioella/static/media/ellaeun.dc1f75072adda274f6cd.png",
@@ -19,11 +19,11 @@
     "static/media/CSS-Logo.png": "/portfolioella/static/media/CSS-Logo.d94e03711e9aba205079.png",
     "static/media/fb.jpg": "/portfolioella/static/media/fb.e262ca013cc43ab28add.jpg",
     "index.html": "/portfolioella/index.html",
-    "main.5ea4fd5a.css.map": "/portfolioella/static/css/main.5ea4fd5a.css.map",
+    "main.24a4b3e1.css.map": "/portfolioella/static/css/main.24a4b3e1.css.map",
     "main.d56f50ea.js.map": "/portfolioella/static/js/main.d56f50ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ea4fd5a.css",
+    "static/css/main.24a4b3e1.css",
     "static/js/main.d56f50ea.js"
   ]
 }
